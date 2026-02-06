@@ -6,58 +6,58 @@
 
 @layer base {
   :root {
-    --background: 240 6% 10%;
-    --foreground: 45 30% 90%;
+    --background: 30 15% 10%;
+    --foreground: 40 40% 88%;
 
-    --card: 240 5% 14%;
-    --card-foreground: 45 30% 90%;
+    --card: 28 12% 14%;
+    --card-foreground: 40 40% 88%;
 
-    --popover: 240 5% 14%;
-    --popover-foreground: 45 30% 90%;
+    --popover: 28 12% 14%;
+    --popover-foreground: 40 40% 88%;
 
-    --primary: 42 85% 55%;
-    --primary-foreground: 240 10% 5%;
+    --primary: 28 80% 52%;
+    --primary-foreground: 30 20% 6%;
 
-    --secondary: 240 4% 18%;
-    --secondary-foreground: 45 20% 75%;
+    --secondary: 30 10% 17%;
+    --secondary-foreground: 35 25% 72%;
 
-    --muted: 240 4% 18%;
-    --muted-foreground: 240 4% 50%;
+    --muted: 30 8% 18%;
+    --muted-foreground: 30 8% 48%;
 
-    --accent: 42 70% 48%;
-    --accent-foreground: 240 10% 5%;
+    --accent: 28 65% 45%;
+    --accent-foreground: 30 20% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 4% 22%;
-    --input: 240 4% 20%;
-    --ring: 42 85% 55%;
+    --border: 30 8% 22%;
+    --input: 30 8% 20%;
+    --ring: 28 80% 52%;
 
     --radius: 0.25rem;
 
     /* Custom tokens */
-    --flame: 42 85% 55%;
-    --flame-light: 45 90% 65%;
-    --flame-dark: 38 75% 42%;
-    --parchment: 45 30% 82%;
-    --parchment-dark: 240 4% 22%;
-    --sepia: 240 5% 14%;
-    --surface-elevated: 240 5% 16%;
+    --flame: 28 80% 52%;
+    --flame-light: 32 85% 62%;
+    --flame-dark: 24 70% 38%;
+    --parchment: 38 35% 78%;
+    --parchment-dark: 30 8% 22%;
+    --sepia: 28 12% 14%;
+    --surface-elevated: 28 10% 16%;
 
-    --sidebar-background: 240 6% 12%;
-    --sidebar-foreground: 45 30% 90%;
-    --sidebar-primary: 42 85% 55%;
-    --sidebar-primary-foreground: 240 10% 5%;
-    --sidebar-accent: 240 4% 18%;
-    --sidebar-accent-foreground: 45 30% 90%;
-    --sidebar-border: 240 4% 22%;
-    --sidebar-ring: 42 85% 55%;
+    --sidebar-background: 30 12% 12%;
+    --sidebar-foreground: 40 40% 88%;
+    --sidebar-primary: 28 80% 52%;
+    --sidebar-primary-foreground: 30 20% 6%;
+    --sidebar-accent: 30 10% 17%;
+    --sidebar-accent-foreground: 40 40% 88%;
+    --sidebar-border: 30 8% 22%;
+    --sidebar-ring: 28 80% 52%;
   }
 
   .dark {
-    --background: 240 6% 10%;
-    --foreground: 45 30% 90%;
+    --background: 30 15% 10%;
+    --foreground: 40 40% 88%;
   }
 }
 
@@ -77,14 +77,14 @@
 
 @layer utilities {
   .text-flame-gradient {
-    background: linear-gradient(135deg, hsl(45 90% 68%), hsl(42 85% 55%), hsl(36 75% 42%));
+    background: linear-gradient(135deg, hsl(35 90% 65%), hsl(28 80% 52%), hsl(22 70% 38%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-parchment-gradient {
-    background: linear-gradient(180deg, hsl(45 30% 90%), hsl(45 20% 70%));
+    background: linear-gradient(180deg, hsl(40 40% 88%), hsl(35 25% 68%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -92,13 +92,13 @@
 
   .glow-flame {
     box-shadow: 
-      0 0 40px -5px hsl(42 85% 55% / 0.35),
-      0 0 80px -10px hsl(42 85% 55% / 0.2),
+      0 0 40px -5px hsl(28 80% 52% / 0.35),
+      0 0 80px -10px hsl(28 80% 52% / 0.2),
       0 20px 60px -15px hsl(0 0% 0% / 0.5);
   }
 
   .border-flame-subtle {
-    border-color: hsl(42 85% 55% / 0.3);
+    border-color: hsl(28 80% 52% / 0.3);
   }
 
   .bg-surface-elevated {
@@ -106,7 +106,7 @@
   }
 
   .bg-parchment-vignette {
-    background: radial-gradient(ellipse at center, hsl(240 5% 14%) 0%, hsl(240 6% 8%) 100%);
+    background: radial-gradient(ellipse at center, hsl(28 12% 14%) 0%, hsl(30 15% 7%) 100%);
   }
 
   /* Noise grain texture overlay */
@@ -125,22 +125,22 @@
   /* Dramatic book shadow for 3D depth */
   .shadow-book {
     box-shadow:
-      4px 4px 0px 0px hsl(240 6% 6%),
-      8px 8px 0px 0px hsl(240 6% 4%),
+      4px 4px 0px 0px hsl(30 12% 6%),
+      8px 8px 0px 0px hsl(30 12% 4%),
       0 25px 50px -12px hsl(0 0% 0% / 0.6),
-      0 0 50px -5px hsl(42 85% 55% / 0.2);
+      0 0 50px -5px hsl(28 80% 52% / 0.2);
   }
 
   /* Inner light effect for sections */
   .inner-glow {
-    box-shadow: inset 0 1px 0 0 hsl(42 85% 55% / 0.12);
+    box-shadow: inset 0 1px 0 0 hsl(28 80% 52% / 0.12);
   }
 
   /* Spotlight effect */
   .spotlight {
     background: radial-gradient(
       600px circle at var(--mouse-x, 50%) var(--mouse-y, 30%),
-      hsl(42 85% 55% / 0.08) 0%,
+      hsl(28 80% 52% / 0.08) 0%,
       transparent 60%
     );
   }
@@ -151,9 +151,9 @@
     background: linear-gradient(
       to right,
       transparent,
-      hsl(42 85% 55% / 0.35),
-      hsl(42 85% 55% / 0.6),
-      hsl(42 85% 55% / 0.35),
+      hsl(28 80% 52% / 0.35),
+      hsl(28 80% 52% / 0.6),
+      hsl(28 80% 52% / 0.35),
       transparent
     );
     box-shadow: 0 1px 0 0 hsl(0 0% 0% / 0.4);
