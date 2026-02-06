@@ -2,22 +2,36 @@ import nunMoreDeadlyCover from "@/assets/nun-more-deadly-cover.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
-      {/* Background vignette */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20 grain-overlay">
+      {/* Multi-layered background for depth */}
       <div className="absolute inset-0 bg-parchment-vignette" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(240_8%_10%_/_0.5)_0%,_transparent_70%)]" />
+      
+      {/* Ambient top-down light */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(42_78%_50%_/_0.04)_0%,_transparent_50%)]" />
+      
+      {/* Bottom fade for depth layering */}
+      <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent" />
 
       <div className="relative z-10 container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Book Cover */}
         <div className="flex justify-center lg:justify-end order-1 lg:order-2">
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-br from-flame/20 via-transparent to-flame-dark/10 rounded-lg blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-            <img
-              src={nunMoreDeadlyCover}
-              alt="Nun More Deadly - Nunchucks! Book 1"
-              className="relative w-64 sm:w-72 md:w-80 lg:w-96 rounded shadow-2xl shadow-black/60 glow-flame animate-scale-in"
-            />
-            <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground text-xs font-body font-semibold uppercase tracking-widest px-4 py-2 rounded">
+            {/* Ambient glow behind the book */}
+            <div className="absolute -inset-8 bg-[radial-gradient(circle,_hsl(42_78%_50%_/_0.12)_0%,_transparent_70%)] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+            
+            {/* Book with 3D shadow */}
+            <div className="relative">
+              <img
+                src={nunMoreDeadlyCover}
+                alt="Nun More Deadly - Nunchucks! Book 1"
+                className="relative w-64 sm:w-72 md:w-80 lg:w-96 rounded shadow-book animate-scale-in transition-transform duration-500 group-hover:-translate-y-1"
+              />
+              {/* Spine edge for 3D effect */}
+              <div className="absolute top-2 -left-1 bottom-2 w-1 bg-gradient-to-b from-transparent via-primary/20 to-transparent rounded-l" />
+            </div>
+            
+            <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground text-xs font-body font-semibold uppercase tracking-widest px-4 py-2 rounded shadow-lg shadow-black/40">
               Book One
             </div>
           </div>
@@ -29,7 +43,7 @@ const HeroSection = () => {
             The Nunchucks! Series
           </p>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold uppercase leading-[0.95] opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <span className="text-flame-gradient">Nun More</span>
+            <span className="text-flame-gradient drop-shadow-[0_2px_10px_hsl(42_78%_50%_/_0.3)]">Nun More</span>
             <br />
             <span className="text-parchment-gradient">Deadly</span>
           </h1>
@@ -42,13 +56,13 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2 opacity-0 animate-fade-up" style={{ animationDelay: "0.8s" }}>
             <a
               href="#series"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-flame-light transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-flame-light transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
             >
               Explore the Series
             </a>
             <a
               href="#newsletter"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-body font-medium text-sm uppercase tracking-wider rounded hover:bg-secondary transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-body font-medium text-sm uppercase tracking-wider rounded hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-sm"
             >
               Get Updates
             </a>
