@@ -43,7 +43,7 @@ const HeroSection = () => {
             The Nunchucks! Series
           </p>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-bold uppercase leading-[0.95] opacity-0 animate-fade-up" style={{ animationDelay: "0.4s" }}>
-            <span className="text-flame-gradient drop-shadow-[0_2px_10px_hsl(28_80%_52%_/_0.3)]">Nun More</span>
+            <span className="text-flame-gradient">Nun More</span>
             <br />
             <span className="text-parchment-gradient">Deadly</span>
           </h1>
