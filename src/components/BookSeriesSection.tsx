@@ -1,6 +1,6 @@
 import nunMoreDeadlyCover from "@/assets/nun-more-deadly-cover.jpg";
-import bookCover2 from "@/assets/book-cover-2.jpg";
-import bookCover3 from "@/assets/book-cover-3.jpg";
+import nunTooHolyCover from "@/assets/nun-too-holy-cover.jpg";
+import nunTheWiserCover from "@/assets/nun-the-wiser-cover.jpg";
 
 const books = [
   {
@@ -11,17 +11,17 @@ const books = [
     available: true,
   },
   {
-    title: "Holy Havoc",
+    title: "Nun Too Holy",
     subtitle: "Book Two",
-    cover: bookCover2,
-    description: "The Colosseum becomes her arena. New enemies rise, and the stakes have never been higher.",
+    cover: nunTooHolyCover,
+    description: "Deadlier. Holier. Silentier. The mountains hold secrets — and she's armed to confess them all.",
     available: true,
   },
   {
-    title: "Pray for Mercy",
+    title: "Nun the Wiser",
     subtitle: "Book Three",
-    cover: bookCover3,
-    description: "The final reckoning. No bridge too far, no sin too great. Mercy is no longer an option.",
+    cover: nunTheWiserCover,
+    description: "The action is baked in. When the catacombs call, wisdom takes a back seat to explosives.",
     available: false,
   },
 ];
