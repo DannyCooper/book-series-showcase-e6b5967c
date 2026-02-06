@@ -29,7 +29,7 @@ const books = [
 const BookSeriesSection = () => {
   return (
     <section id="series" className="relative py-24 md:py-32 px-6">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(30_18%_12%)_0%,_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(240_8%_10%)_0%,_transparent_60%)]" />
 
       <div className="relative container mx-auto max-w-6xl">
         {/* Section Header */}
