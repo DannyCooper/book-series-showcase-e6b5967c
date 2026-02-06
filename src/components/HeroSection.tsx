@@ -25,7 +25,7 @@ const HeroSection = () => {
               <img
                 src={nunMoreDeadlyCover}
                 alt="Nun More Deadly - Nunchucks! Book 1"
-                className="relative w-64 sm:w-72 md:w-80 lg:w-96 rounded shadow-book animate-scale-in transition-transform duration-500 group-hover:-translate-y-1"
+                className="relative w-64 sm:w-72 md:w-80 lg:w-96 rounded-sm shadow-book animate-scale-in transition-transform duration-500 group-hover:-translate-y-1"
               />
               {/* Spine edge for 3D effect */}
               <div className="absolute top-2 -left-1 bottom-2 w-1 bg-gradient-to-b from-transparent via-primary/20 to-transparent rounded-l" />

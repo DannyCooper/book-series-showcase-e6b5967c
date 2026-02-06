@@ -64,14 +64,14 @@ const BookSeriesSection = () => {
                   <img
                     src={book.cover}
                     alt={`${book.title} cover`}
-                    className="w-48 sm:w-56 rounded shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[4px_4px_0px_0px_hsl(30_12%_6%),8px_8px_0px_0px_hsl(30_12%_4%),0_30px_60px_-12px_hsl(0_0%_0%_/_0.7),0_0_50px_-5px_hsl(28_80%_52%_/_0.25)]"
+                    className="w-48 sm:w-56 rounded-sm shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[4px_4px_0px_0px_hsl(30_12%_6%),8px_8px_0px_0px_hsl(30_12%_4%),0_30px_60px_-12px_hsl(0_0%_0%_/_0.7),0_0_50px_-5px_hsl(28_80%_52%_/_0.25)]"
                   />
                   {/* Spine edge */}
                   <div className="absolute top-1 -left-0.5 bottom-1 w-0.5 bg-gradient-to-b from-transparent via-primary/15 to-transparent rounded-l" />
                 </div>
 
                 {!book.available && (
-                  <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px] rounded flex items-center justify-center">
+                  <div className="absolute inset-0 bg-background/60 backdrop-blur-[2px] rounded-sm flex items-center justify-center">
                     <span className="text-flame font-body text-xs uppercase tracking-[0.2em] font-semibold bg-background/80 px-4 py-2 rounded border border-primary/20 shadow-lg">
                       Coming 2026
                     </span>
