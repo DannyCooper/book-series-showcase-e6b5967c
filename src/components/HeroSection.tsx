@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
       {/* Background vignette */}
       <div className="absolute inset-0 bg-parchment-vignette" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(30_25%_12%_/_0.5)_0%,_transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(240_8%_10%_/_0.5)_0%,_transparent_70%)]" />
 
       <div className="relative z-10 container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* Book Cover */}
