@@ -24,7 +24,7 @@ const NewsletterSection = () => {
     <section id="newsletter" className="relative py-24 md:py-32 px-6 grain-overlay">
       {/* Layered depth background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/30 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(42_78%_50%_/_0.03)_0%,_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(42_85%_55%_/_0.04)_0%,_transparent_50%)]" />
 
       <div className="relative z-10 container mx-auto max-w-2xl text-center space-y-8">
         {/* Decorative element */}

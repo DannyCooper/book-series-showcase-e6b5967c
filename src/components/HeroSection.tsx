@@ -5,10 +5,10 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20 grain-overlay">
       {/* Multi-layered background for depth */}
       <div className="absolute inset-0 bg-parchment-vignette" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(240_8%_10%_/_0.5)_0%,_transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(240_5%_16%_/_0.5)_0%,_transparent_70%)]" />
       
       {/* Ambient top-down light */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(42_78%_50%_/_0.04)_0%,_transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(42_85%_55%_/_0.06)_0%,_transparent_50%)]" />
       
       {/* Bottom fade for depth layering */}
       <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background to-transparent" />
@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="flex justify-center lg:justify-end order-1 lg:order-2">
           <div className="relative group">
             {/* Ambient glow behind the book */}
-            <div className="absolute -inset-8 bg-[radial-gradient(circle,_hsl(42_78%_50%_/_0.12)_0%,_transparent_70%)] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute -inset-8 bg-[radial-gradient(circle,_hsl(42_85%_55%_/_0.15)_0%,_transparent_70%)] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
             
             {/* Book with 3D shadow */}
             <div className="relative">
