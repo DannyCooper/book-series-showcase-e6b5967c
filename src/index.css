@@ -125,10 +125,9 @@
   /* Dramatic book shadow for 3D depth */
   .shadow-book {
     box-shadow:
-      4px 4px 0px 0px hsl(30 12% 6%),
-      8px 8px 0px 0px hsl(30 12% 4%),
-      0 25px 50px -12px hsl(0 0% 0% / 0.6),
-      0 0 50px -5px hsl(28 80% 52% / 0.2);
+      0 8px 20px -4px hsl(0 0% 0% / 0.5),
+      0 20px 50px -10px hsl(0 0% 0% / 0.4),
+      0 0 40px -8px hsl(28 80% 52% / 0.15);
   }
 
   /* Inner light effect for sections */
