@@ -30,8 +30,8 @@ const BookSeriesSection = () => {
   return (
     <section id="series" className="relative py-24 md:py-32 px-6 grain-overlay">
       {/* Layered background for depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(240_8%_10%)_0%,_transparent_60%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_hsl(240_10%_3%)_0%,_transparent_40%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(240_5%_14%)_0%,_transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_hsl(240_6%_7%)_0%,_transparent_40%)]" />
 
       {/* Ambient gold light from top */}
       <div className="absolute top-0 left-0 right-0 h-px divider-embossed" />
@@ -58,13 +58,13 @@ const BookSeriesSection = () => {
             >
               <div className="relative inline-block mx-auto">
                 {/* Ambient glow behind each book */}
-                <div className="absolute -inset-6 bg-[radial-gradient(circle,_hsl(42_78%_50%_/_0.08)_0%,_transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute -inset-6 bg-[radial-gradient(circle,_hsl(42_85%_55%_/_0.1)_0%,_transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative">
                   <img
                     src={book.cover}
                     alt={`${book.title} cover`}
-                    className="w-48 sm:w-56 rounded shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[4px_4px_0px_0px_hsl(240_10%_3%),8px_8px_0px_0px_hsl(240_10%_2%),0_30px_60px_-12px_hsl(0_0%_0%_/_0.8),0_0_50px_-5px_hsl(42_78%_50%_/_0.2)]"
+                    className="w-48 sm:w-56 rounded shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[4px_4px_0px_0px_hsl(240_6%_6%),8px_8px_0px_0px_hsl(240_6%_4%),0_30px_60px_-12px_hsl(0_0%_0%_/_0.7),0_0_50px_-5px_hsl(42_85%_55%_/_0.25)]"
                   />
                   {/* Spine edge */}
                   <div className="absolute top-1 -left-0.5 bottom-1 w-0.5 bg-gradient-to-b from-transparent via-primary/15 to-transparent rounded-l" />
