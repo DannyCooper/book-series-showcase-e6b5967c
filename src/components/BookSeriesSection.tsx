@@ -64,7 +64,7 @@ const BookSeriesSection = () => {
                   <img
                     src={book.cover}
                     alt={`${book.title} cover`}
-                    className="w-48 sm:w-56 rounded-sm shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[4px_4px_0px_0px_hsl(30_12%_6%),8px_8px_0px_0px_hsl(30_12%_4%),0_30px_60px_-12px_hsl(0_0%_0%_/_0.7),0_0_50px_-5px_hsl(28_80%_52%_/_0.25)]"
+                    className="w-48 sm:w-56 rounded-sm shadow-book transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-[0_12px_30px_-6px_hsl(0_0%_0%_/_0.6),0_25px_60px_-12px_hsl(0_0%_0%_/_0.45),0_0_50px_-5px_hsl(28_80%_52%_/_0.2)]"
                   />
                   {/* Spine edge */}
                   <div className="absolute top-1 -left-0.5 bottom-1 w-0.5 bg-gradient-to-b from-transparent via-primary/15 to-transparent rounded-l" />
