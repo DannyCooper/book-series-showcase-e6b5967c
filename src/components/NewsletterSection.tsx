@@ -37,7 +37,7 @@ const NewsletterSection = () => {
         <h2 className="text-3xl sm:text-4xl font-display font-bold uppercase drop-shadow-[0_2px_8px_hsl(0_0%_0%_/_0.5)]">
           Stay in the Fight
         </h2>
-        <p className="text-muted-foreground font-serif text-lg leading-relaxed max-w-lg mx-auto italic">
+        <p className="text-muted-foreground font-body text-base leading-relaxed max-w-lg mx-auto">
           Get exclusive updates, behind-the-scenes content, and early access to new releases. No spam — just righteous fury delivered to your inbox.
         </p>
 

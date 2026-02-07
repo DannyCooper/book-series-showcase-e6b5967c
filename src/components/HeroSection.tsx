@@ -47,7 +47,7 @@ const HeroSection = () => {
             <br />
             <span className="text-parchment-gradient">Deadly</span>
           </h1>
-          <p className="text-foreground/70 font-serif text-lg md:text-xl italic max-w-lg mx-auto lg:mx-0 leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
+          <p className="text-foreground/70 font-body text-lg max-w-lg mx-auto lg:mx-0 leading-relaxed opacity-0 animate-fade-up" style={{ animationDelay: "0.6s" }}>
             Forgiveness is overrated. In a world of corruption and chaos, one nun trades prayers for nunchucks — and the sinners won't see her coming.
           </p>
           <p className="text-muted-foreground font-body text-sm uppercase tracking-wider opacity-0 animate-fade-up" style={{ animationDelay: "0.7s" }}>

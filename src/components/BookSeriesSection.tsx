@@ -1,29 +1,29 @@
-import nunMoreDeadlyCover from "@/assets/nun-more-deadly-cover.jpg";
-import nunTooHolyCover from "@/assets/nun-too-holy-cover.jpg";
-import nunTheWiserCover from "@/assets/nun-the-wiser-cover.jpg";
+import book1 from "@/assets/1 NMD Digital HR.jpg";
+import book2 from "@/assets/2 NTH Digital HR.jpg";
+import book3 from "@/assets/3 NTW Digital HR.jpg";
+import book4 from "@/assets/4 NYB Digital HR.jpg";
+import book5 from "@/assets/5 NSP Digital HR.jpg";
+import book6 from "@/assets/6 NI Digital HR.jpg";
+import book7 from "@/assets/7 NBB Digital HR.jpg";
+import book8 from "@/assets/8 NTA Digital HR.jpg";
+import book9 from "@/assets/9 STN Digital HR.jpg";
+import book10 from "@/assets/10 NBL Digital HR.jpg";
+import book11 from "@/assets/11 NBS Digital HR.jpg";
+import book12 from "@/assets/12 NDD Digital HR.jpg";
 
 const books = [
-  {
-    title: "Nun More Deadly",
-    subtitle: "Book One",
-    cover: nunMoreDeadlyCover,
-    description: "A nun with a grudge and a rosary full of fury takes on Venice's most dangerous criminals.",
-    available: true,
-  },
-  {
-    title: "Nun Too Holy",
-    subtitle: "Book Two",
-    cover: nunTooHolyCover,
-    description: "Deadlier. Holier. Silentier. The mountains hold secrets — and she's armed to confess them all.",
-    available: true,
-  },
-  {
-    title: "Nun the Wiser",
-    subtitle: "Book Three",
-    cover: nunTheWiserCover,
-    description: "The action is baked in. When the catacombs call, wisdom takes a back seat to explosives.",
-    available: false,
-  },
+  { title: "Nun More Deadly", subtitle: "Book 1", cover: book1, description: "Forgiveness is overrated. Venice's canals run red.", available: true },
+  { title: "Nun Too Holy", subtitle: "Book 2", cover: book2, description: "Deadlier. Holier. Silentier. The mountains hold secrets.", available: true },
+  { title: "Nun the Wiser", subtitle: "Book 3", cover: book3, description: "The action is baked in. Wisdom takes a back seat to explosives.", available: true },
+  { title: "Nun of Your Business", subtitle: "Book 4", cover: book4, description: "Sisterhood is complicated. So is the Vatican.", available: true },
+  { title: "Nun Shall Pass", subtitle: "Book 5", cover: book5, description: "Believing is tough. So is surviving this chapter.", available: true },
+  { title: "Nun, Interrupted", subtitle: "Book 6", cover: book6, description: "#PrayForTheYouth. One nun, one phone, zero patience.", available: true },
+  { title: "Nun But the Brave", subtitle: "Book 7", cover: book7, description: "Sometimes running is the answer. Sometimes it's just the start.", available: true },
+  { title: "Nun of the Above", subtitle: "Book 8", cover: book8, description: "He's going to all his old haunts. The ghosts are waiting.", available: true },
+  { title: "Second to Nun", subtitle: "Book 9", cover: book9, description: "When you got it, you got it. And she's got backup.", available: true },
+  { title: "Nun Believable", subtitle: "Book 10", cover: book10, description: "First contact. Last nerve. The truth is out there.", available: true },
+  { title: "Nun But the Script", subtitle: "Book 11", cover: book11, description: "Lights. Camera. Existential crisis. Hollywood has no idea.", available: true },
+  { title: "Nun, Done and Dusted", subtitle: "Book 12", cover: book12, description: "Smite the system. The final chapter.", available: true },
 ];
 
 const BookSeriesSection = () => {
@@ -43,13 +43,13 @@ const BookSeriesSection = () => {
             The Nunchucks! Series
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold uppercase drop-shadow-[0_2px_8px_hsl(0_0%_0%_/_0.5)]">
-            Three Books. Zero Mercy.
+            Twelve Books. Zero Mercy.
           </h2>
           <div className="w-16 divider-embossed mx-auto mt-6" />
         </div>
 
         {/* Books Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
           {books.map((book, index) => (
             <div
               key={book.title}
@@ -85,7 +85,7 @@ const BookSeriesSection = () => {
                 <h3 className="text-xl font-display font-semibold text-foreground uppercase drop-shadow-[0_1px_3px_hsl(0_0%_0%_/_0.4)]">
                   {book.title}
                 </h3>
-                <p className="text-muted-foreground font-serif text-sm leading-relaxed max-w-xs mx-auto italic">
+                <p className="text-muted-foreground font-body text-base leading-relaxed max-w-xs mx-auto">
                   {book.description}
                 </p>
               </div>

@@ -1,4 +1,4 @@
-import nunchucksBoxset from "@/assets/nunchucks-boxset.jpg";
+import nunchucksBoxset from "@/assets/nunchucks-boxset.png";
 
 const BoxsetSection = () => {
   return (
@@ -15,35 +15,31 @@ const BoxsetSection = () => {
         <div className="flex justify-center lg:justify-start">
           <div className="relative group">
             {/* Ambient glow */}
-            <div className="absolute -inset-8 bg-[radial-gradient(circle,_hsl(28_80%_52%_/_0.15)_0%,_transparent_70%)] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700" />
+            <div className="absolute " />
 
             <div className="relative">
               <img
                 src={nunchucksBoxset}
                 alt="Nunchucks! The Whole Shooting Match — Complete Boxset"
-                className="relative w-64 sm:w-72 md:w-80 lg:w-96 rounded-sm shadow-book transition-transform duration-500 group-hover:-translate-y-1"
+                className="relative w-full h-auto rounded-sm  transition-transform duration-500 group-hover:-translate-y-1"
               />
-              {/* Spine edge */}
-              <div className="absolute top-2 -left-1 bottom-2 w-1 bg-gradient-to-b from-transparent via-primary/20 to-transparent rounded-l" />
             </div>
 
-            <div className="absolute -bottom-3 -right-3 bg-primary text-primary-foreground text-xs font-body font-semibold uppercase tracking-widest px-4 py-2 rounded shadow-lg shadow-black/40">
-              Complete Boxset
-            </div>
+           
           </div>
         </div>
 
         {/* Text Content */}
         <div className="text-center lg:text-left space-y-6">
           <p className="text-flame font-body text-sm uppercase tracking-[0.3em] font-medium">
-            All Three Books — One Package
+            All Twelve Books — One Package
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold uppercase leading-[0.95]">
             <span className="text-flame-gradient">The Whole</span>
             <br />
             <span className="text-parchment-gradient">Shooting Match</span>
           </h2>
-          <p className="text-foreground/70 font-serif text-lg md:text-xl italic max-w-lg mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-foreground/70 font-body text-base max-w-lg mx-auto lg:mx-0 leading-relaxed">
             Every prayer. Every punch. Every penance. Get the entire Nunchucks! trilogy in one 
             righteous collection — from the canals of Venice to the catacombs beneath Rome.
           </p>
