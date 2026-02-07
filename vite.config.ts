@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "production" ? "/book-series-showcase/" : "/",
+  // Use "/" for Cloudflare Pages; use "/book-series-showcase/" for GitHub Pages
+  base: process.env.CF_PAGES === "1" ? "/" : mode === "production" ? "/book-series-showcase/" : "/",
   server: {
     host: "::",
     port: 8080,
