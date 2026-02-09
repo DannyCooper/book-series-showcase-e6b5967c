@@ -121,9 +121,9 @@ const BookDetailHero = ({ book }: BookDetailHeroProps) => {
             
               <a
                 href="#boxset"
-                className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-body font-medium text-sm uppercase tracking-wider rounded hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-sm"
+                className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-sm"
               >
-                Get the FullBoxset
+                Get the Full Boxset
               </a>
             
           </div>
