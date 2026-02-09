@@ -17,7 +17,7 @@ const BookDetailSeriesNav = ({ currentBook }: BookDetailSeriesNavProps) => {
           <p className="text-flame font-body text-sm uppercase tracking-[0.3em] font-medium">
             More in the Series
           </p>
-          <h2 className="text-2xl sm:text-3xl font-display font-bold uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold uppercase drop-shadow-[0_2px_8px_hsl(0_0%_0%_/_0.5)]">
             Twelve Books. Zero Mercy.
           </h2>
           <div className="w-16 divider-embossed mx-auto mt-4" />
