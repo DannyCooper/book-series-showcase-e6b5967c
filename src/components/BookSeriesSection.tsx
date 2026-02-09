@@ -1,30 +1,5 @@
-import book1 from "@/assets/1 NMD Digital HR.jpg";
-import book2 from "@/assets/2 NTH Digital HR.jpg";
-import book3 from "@/assets/3 NTW Digital HR.jpg";
-import book4 from "@/assets/4 NYB Digital HR.jpg";
-import book5 from "@/assets/5 NSP Digital HR.jpg";
-import book6 from "@/assets/6 NI Digital HR.jpg";
-import book7 from "@/assets/7 NBB Digital HR.jpg";
-import book8 from "@/assets/8 NTA Digital HR.jpg";
-import book9 from "@/assets/9 STN Digital HR.jpg";
-import book10 from "@/assets/10 NBL Digital HR.jpg";
-import book11 from "@/assets/11 NBS Digital HR.jpg";
-import book12 from "@/assets/12 NDD Digital HR.jpg";
-
-const books = [
-  { title: "Nun More Deadly", subtitle: "Book 1", cover: book1, description: "Forgiveness is overrated. Venice's canals run red.", available: true },
-  { title: "Nun Too Holy", subtitle: "Book 2", cover: book2, description: "Deadlier. Holier. Silentier. The mountains hold secrets.", available: true },
-  { title: "Nun the Wiser", subtitle: "Book 3", cover: book3, description: "The action is baked in. Wisdom takes a back seat to explosives.", available: true },
-  { title: "Nun of Your Business", subtitle: "Book 4", cover: book4, description: "Sisterhood is complicated. So is the Vatican.", available: true },
-  { title: "Nun Shall Pass", subtitle: "Book 5", cover: book5, description: "Believing is tough. So is surviving this chapter.", available: true },
-  { title: "Nun, Interrupted", subtitle: "Book 6", cover: book6, description: "#PrayForTheYouth. One nun, one phone, zero patience.", available: true },
-  { title: "Nun But the Brave", subtitle: "Book 7", cover: book7, description: "Sometimes running is the answer. Sometimes it's just the start.", available: true },
-  { title: "Nun of the Above", subtitle: "Book 8", cover: book8, description: "He's going to all his old haunts. The ghosts are waiting.", available: true },
-  { title: "Second to Nun", subtitle: "Book 9", cover: book9, description: "When you got it, you got it. And she's got backup.", available: true },
-  { title: "Nun Believable", subtitle: "Book 10", cover: book10, description: "First contact. Last nerve. The truth is out there.", available: true },
-  { title: "Nun But the Script", subtitle: "Book 11", cover: book11, description: "Lights. Camera. Existential crisis. Hollywood has no idea.", available: true },
-  { title: "Nun, Done and Dusted", subtitle: "Book 12", cover: book12, description: "Smite the system. The final chapter.", available: true },
-];
+import { Link } from "react-router-dom";
+import { books } from "@/data/books";
 
 const BookSeriesSection = () => {
   return (
@@ -90,12 +65,15 @@ const BookSeriesSection = () => {
                 </p>
               </div>
               {book.available && (
-                <button className="inline-flex items-center gap-2 text-flame font-body text-sm font-medium hover:text-flame-light transition-all duration-300 uppercase tracking-wider hover:-translate-y-0.5">
+                <Link
+                  to={`/book/${book.slug}`}
+                  className="inline-flex items-center gap-2 text-flame font-body text-sm font-medium hover:text-flame-light transition-all duration-300 uppercase tracking-wider hover:-translate-y-0.5"
+                >
                   Read More
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
+                </Link>
               )}
             </div>
           ))}
