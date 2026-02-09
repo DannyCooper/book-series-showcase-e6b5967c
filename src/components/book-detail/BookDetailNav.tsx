@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const BookDetailNav = () => {
+
   return (
     <nav className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
@@ -12,23 +13,23 @@ const BookDetailNav = () => {
         </Link>
 
         <div className="flex items-center gap-6">
-          <Link
-            to="/#series"
+          <a
+            href="#series"
             className="hidden sm:inline-flex text-muted-foreground font-body text-sm uppercase tracking-wider hover:text-foreground transition-colors duration-300"
           >
             Series
-          </Link>
-          <Link
-            to="/#boxset"
+          </a>
+          <a
+            href="#boxset"
             className="hidden sm:inline-flex text-muted-foreground font-body text-sm uppercase tracking-wider hover:text-foreground transition-colors duration-300"
           >
             Boxset
-          </Link>
+          </a>
           <a
-            href="#cta"
-            className="inline-flex items-center justify-center px-5 py-2 bg-primary text-primary-foreground font-display font-semibold text-xs uppercase tracking-wider rounded hover:bg-flame-light transition-all duration-300 shadow-md shadow-primary/20"
+            href="#newsletter"
+            className="hidden sm:inline-flex text-muted-foreground font-body text-sm uppercase tracking-wider hover:text-foreground transition-colors duration-300"
           >
-            Buy Now
+            Newsletter
           </a>
         </div>
       </div>

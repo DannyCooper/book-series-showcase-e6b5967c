@@ -8,7 +8,6 @@ const metaItems = (book: Book) => {
   const items: { icon: string; label: string }[] = [];
   if (book.pages) items.push({ icon: "📖", label: `${book.pages} Pages` });
   if (book.genre) items.push({ icon: "🔥", label: book.genre });
-  if (book.year) items.push({ icon: "📅", label: book.year });
   items.push({ icon: "⭐", label: book.subtitle + " of 12" });
   return items;
 };

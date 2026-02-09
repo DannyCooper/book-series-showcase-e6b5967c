@@ -2,7 +2,7 @@ import nunMoreDeadlyCover from "@/assets/nun-more-deadly-cover.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20 grain-overlay">
+    <section className="relative min-h-[calc(100vh-3.5rem)] flex items-center justify-center overflow-hidden px-6 py-20 grain-overlay">
       {/* Multi-layered background for depth */}
       <div className="absolute inset-0 bg-parchment-vignette" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(28_12%_16%_/_0.5)_0%,_transparent_70%)]" />
@@ -62,7 +62,7 @@ const HeroSection = () => {
             </a>
             <a
               href="#newsletter"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-body font-medium text-sm uppercase tracking-wider rounded hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-sm"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-flame-subtle text-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-secondary transition-all duration-300 hover:-translate-y-0.5 backdrop-blur-sm"
             >
               Get Updates
             </a>
