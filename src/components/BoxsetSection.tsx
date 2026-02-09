@@ -42,7 +42,7 @@ const BoxsetSection = () => {
           <p className="text-flame font-body text-sm uppercase tracking-[0.3em] font-medium">
             All Twelve Books — One Package
           </p>
-          <h2 className="text-6xl font-display font-bold uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl  font-display font-bold uppercase">
             <span className="text-flame-gradient">The Whole</span>
             <br />
             <span className="text-parchment-gradient">Shooting Match</span>
