@@ -73,48 +73,30 @@ const BookDetailHero = ({ book }: BookDetailHeroProps) => {
                   <p className="text-flame font-body text-xs uppercase tracking-wider font-medium mb-4">
                     Choose Your Retailer
                   </p>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between px-4 py-3 bg-secondary hover:bg-secondary/80 rounded transition-colors duration-200 group"
-                    onClick={() => setPopoverOpen(false)}
-                  >
-                    <span className="font-body text-sm uppercase tracking-wider text-foreground group-hover:text-flame">
-                      Amazon
-                    </span>
-                    <svg className="w-4 h-4 text-muted-foreground group-hover:text-flame transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between px-4 py-3 bg-secondary hover:bg-secondary/80 rounded transition-colors duration-200 group"
-                    onClick={() => setPopoverOpen(false)}
-                  >
-                    <span className="font-body text-sm uppercase tracking-wider text-foreground group-hover:text-flame">
-                      Kobo
-                    </span>
-                    <svg className="w-4 h-4 text-muted-foreground group-hover:text-flame transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between px-4 py-3 bg-secondary hover:bg-secondary/80 rounded transition-colors duration-200 group"
-                    onClick={() => setPopoverOpen(false)}
-                  >
-                    <span className="font-body text-sm uppercase tracking-wider text-foreground group-hover:text-flame">
-                      Curios
-                    </span>
-                    <svg className="w-4 h-4 text-muted-foreground group-hover:text-flame transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
+                  {book.purchase_links &&
+                    Object.entries(book.purchase_links).map(([store, url]) => (
+                      <a
+                        key={store}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-between px-4 py-3 bg-secondary hover:bg-secondary/80 rounded transition-colors duration-200 group"
+                        onClick={() => setPopoverOpen(false)}
+                      >
+                        <span className="font-body text-sm uppercase tracking-wider text-foreground group-hover:text-flame">
+                          {store.charAt(0).toUpperCase() + store.slice(1)}
+                        </span>
+                        <svg
+                          className="w-4 h-4 text-muted-foreground group-hover:text-flame transition-colors"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </a>
+                    ))}
                 </div>
               </PopoverContent>
             </Popover>

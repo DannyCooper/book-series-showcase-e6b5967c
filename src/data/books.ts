@@ -24,6 +24,7 @@ export interface Book {
   synopsis?: string[];
   pullQuote?: string;
   excerpt?: string;
+  purchase_links?: Record<string, string>;
 }
 
 export const books: Book[] = [
@@ -37,6 +38,12 @@ export const books: Book[] = [
     pages: 320,
     genre: "Action Comedy",
     year: "2024",
+    purchase_links: {
+      "amazon uk": "https://www.amazon.co.uk/dp/B0D749TXDS",
+      "amazon us": "https://www.amazon.com/dp/B0D749TXDS",
+      "kobo": "https://www.kobo.com/en-gb/ebook/nun-more-deadly",
+      "curios": "https://www.curios.com/en-gb/ebook/nun-more-deadly",
+    },
     synopsis: [
       "Sister Francesca never asked for a life of violence. But when a shadowy cabal within the Vatican threatens to unleash an ancient weapon upon the unsuspecting streets of Venice, she discovers that prayer alone won't cut it.",
       "Armed with a pair of blessed nunchucks, an encyclopaedic knowledge of pressure points, and a habit that conceals more hardware than a Swiss army knife, Francesca trades the convent for the canals — and the sinners won't see her coming.",
