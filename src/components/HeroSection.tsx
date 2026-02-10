@@ -70,8 +70,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-0 animate-fade-in" style={{ animationDelay: "1.5s" }}>
+      {/* Scroll indicator (desktop only to avoid overlap on small screens) */}
+      <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-0 animate-fade-in" style={{ animationDelay: "1.5s" }}>
         <span className="text-muted-foreground font-body text-xs uppercase tracking-widest">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-muted-foreground to-transparent" />
       </div>

@@ -23,7 +23,7 @@ const BookDetailSeriesNav = ({ currentBook }: BookDetailSeriesNavProps) => {
           <div className="w-16 divider-embossed mx-auto mt-4" />
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-6 md:gap-8 px-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 px-2">
           {books.map((book) => {
             const isCurrent = book.slug === currentBook.slug;
             return (
