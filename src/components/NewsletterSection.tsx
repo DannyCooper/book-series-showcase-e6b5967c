@@ -1,25 +1,4 @@
-import { useState } from "react";
-import { toast } from "sonner";
-
 const NewsletterSection = () => {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-
-    setIsSubmitting(true);
-
-    setTimeout(() => {
-      toast.success("You're in!", {
-        description: "You'll be the first to know about new Nunchucks! releases.",
-      });
-      setEmail("");
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
   return (
     <section id="newsletter" className="relative py-24 md:py-32 px-6 grain-overlay">
       {/* Layered depth background */}
@@ -41,21 +20,28 @@ const NewsletterSection = () => {
           Get exclusive updates, behind-the-scenes content, and early access to new releases. No spam — just righteous fury delivered to your inbox.
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4">
+        <form
+          action="https://app.kit.com/forms/9216588/subscriptions"
+          method="post"
+          className="seva-form formkit-form flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-4"
+          data-sv-form="9216588"
+          data-uid="e92a14acb3"
+          data-format="inline"
+          data-version="5"
+        >
           <input
             type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            name="email_address"
+            aria-label="Email Address"
+            placeholder="Email Address"
             required
-            className="flex-1 px-5 py-3.5 bg-secondary border border-border rounded font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-300 shadow-inner shadow-black/20"
+            className="formkit-input flex-1 px-5 py-3.5 bg-secondary border border-border rounded font-body text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent transition-all duration-300 shadow-inner shadow-black/20"
           />
           <button
             type="submit"
-            disabled={isSubmitting}
-            className="px-8 py-3.5 bg-primary text-primary-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-flame-light disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 whitespace-nowrap shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
+            className="px-8 py-3.5 bg-primary text-primary-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-flame-light transition-all duration-300 whitespace-nowrap shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
           >
-            {isSubmitting ? "Joining..." : "Subscribe"}
+            Subscribe
           </button>
         </form>
 
