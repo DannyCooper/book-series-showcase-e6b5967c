@@ -8,9 +8,10 @@
     "pages": 320,
     "genre": "Action Comedy",
     "year": "2024",
-        "purchase_links": {
+    "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSBL6MDB",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSBL6MDB",
-      "amazon us": "https://www.amazon.com/dp/B0GSBL6MDB"
+      "curios": "https://www.curios.com/collections/0xf9c84d54e6e7287c71c31f6dafa4442ec39caae1"
     },
     "boxset_links": {
       "amazon": "https://www.amazon.com/gp/product/B0GSCD9RDY",
@@ -33,8 +34,8 @@
     "genre": "Action Comedy",
     "year": "2024",
     "purchase_links": {
-      "amazon uk": "https://www.amazon.co.uk/dp/B0GSDW31DQ",
-      "amazon us": "https://www.amazon.com/dp/B0GSDW31DQ"
+      "amazon us": "https://www.amazon.com/dp/B0GSDW31DQ",
+      "amazon uk": "https://www.amazon.co.uk/dp/B0GSDW31DQ"
     },
     "synopsis": [
       "Peace is coming... and that's the problem.",
@@ -53,8 +54,9 @@
     "genre": "Action Comedy",
     "year": "2025",
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSH5PTM5",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSH5PTM5",
-      "amazon us": "https://www.amazon.com/dp/B0GSH5PTM5"
+      "curios": "https://www.curios.com/collections/0xd9aa000727e5b7d90bd6cfed6db45408af9940c8"
     },
     "synopsis": [
       "When kindness becomes a weapon, only one nun can stay silent long enough to fight back.",
@@ -69,8 +71,9 @@
     "subtitle": "Book 4",
     "description": "Two nuns. One vow. Zero patience for relic-based nonsense.",
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSH1N74S",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSH1N74S",
-      "amazon us": "https://www.amazon.com/dp/B0GSH1N74S"
+      "curios": "https://www.curios.com/collections/0xd2e353378224f90cacb55f9d738942895521dcda"
     },
     "available": true,
     "synopsis": [
@@ -87,8 +90,9 @@
     "description": "The scientists are done with miracles. Time to fight science with... whatever this is.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSCJMHZY",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSCJMHZY",
-      "amazon us": "https://www.amazon.com/dp/B0GSCJMHZY"
+      "curios": "https://www.curios.com/collections/0x91d13e2cc76bb0581f9c47db1af7a7a5de149c20"
     },
     "synopsis": [
       "The scientists are done with miracles. Time to fight science with... whatever this is.",
@@ -104,8 +108,9 @@
     "description": "When Sister Mary Mercy and her squad receive a mysterious message inviting \"her\" to join a global spiritual movement, everyone assumes it's Mercy. It isn't.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSH38LKP",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSH38LKP",
-      "amazon us": "https://www.amazon.com/dp/B0GSH38LKP"
+      "curios": "https://www.curios.com/collections/0x734113a346f10ac02fbe7cd74aded2beae11eb7f"
     },
     "synopsis": [
       "When Sister Mary Mercy and her squad receive a mysterious message inviting \"her\" to join a global spiritual movement, everyone assumes it's Mercy. It isn't. It's Lily.",
@@ -121,8 +126,9 @@
     "description": "When the town of Spirit Pines starts smiling a little too perfectly, Sister Mary Mercy can smell trouble—a problem, since the town wants her to be a more “pleasant” person.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSBYGZQY",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSBYGZQY",
-      "amazon us": "https://www.amazon.com/dp/B0GSBYGZQY"
+      "curios": "https://www.curios.com/collections/0xda0118c284ff7f1833afc90ee41a706e48ba4767"
     },
     "synopsis": [
       "When the town of Spirit Pines starts smiling a little too perfectly, Sister Mary Mercy can smell trouble—a problem, since the town really wants her to be more \"pleasant.\"",
@@ -138,8 +144,9 @@
     "description": "Rome has survived emperors, plagues, invasions, and tourists—but it has never survived this many ghosts at once.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSCP191J",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSCP191J",
-      "amazon us": "https://www.amazon.com/dp/B0GSCP191J"
+      "curios": "https://www.curios.com/collections/0xa0ea87eb22d0cab79e61ae2746cb33eb71e3f4d2"
     },
     "synopsis": [
       "Rome has survived emperors, plagues, invasions, and tourists—but it has never survived this many ghosts at once.",
@@ -155,8 +162,9 @@
     "description": "The angels came to recruit her. Agnes brought a chair.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSG1KTJC",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSG1KTJC",
-      "amazon us": "https://www.amazon.com/dp/B0GSG1KTJC"
+      "curios": "https://www.curios.com/collections/0x617cad33aa9f5c2edf1e6ce6b2997aecfeb36b67"
     },
     "synopsis": [
       "The angels came to recruit her. Agnes brought a chair.",
@@ -172,8 +180,9 @@
     "description": "When actual aliens arrive, they're not impressed... and they're ready to recycle Earth.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSCBVYYQ",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSCBVYYQ",
-      "amazon us": "https://www.amazon.com/dp/B0GSCBVYYQ"
+      "curios": "https://www.curios.com/collections/0xe6b3aca70deb720d21bc04038e92bf0e87b5e761"
     },
     "synopsis": [
       "When actual aliens arrive, they're not impressed... and they're ready to recycle Earth.",
@@ -189,8 +198,9 @@
     "description": "Hollywood has faced scandals before — but never a nun-led exorcism of the film industry.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSG6GZRT",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSG6GZRT",
-      "amazon us": "https://www.amazon.com/dp/B0GSG6GZRT"
+      "curios": "https://www.curios.com/collections/0x932a971060822e881e95737d9ee4f98059d10fa4"
     },
     "synopsis": [
       "Hollywood has faced scandals before — but never a nun-led exorcism of the film industry.",
@@ -206,8 +216,9 @@
     "description": "The final battle isn't Heaven vs. Hell—it's humanity vs. paperwork.",
     "available": true,
     "purchase_links": {
+      "amazon us": "https://www.amazon.com/dp/B0GSGDNWX7",
       "amazon uk": "https://www.amazon.co.uk/dp/B0GSGDNWX7",
-      "amazon us": "https://www.amazon.com/dp/B0GSGDNWX7"
+      "curios": "https://www.curios.com/collections/0x03ff7ea1693164ba63c93783e8b2273c01622eab"
     },
     "synopsis": [
       "The final battle isn't Heaven vs. Hell—it's humanity vs. paperwork.",
