@@ -65,7 +65,7 @@ const BookDetailHero = ({ book }: BookDetailHeroProps) => {
             <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
               <PopoverTrigger asChild>
                 <button className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground font-display font-semibold text-sm uppercase tracking-wider rounded hover:bg-flame-light transition-all duration-300 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
-                  Get This Book
+                  {book.slug === "nun-more-deadly" ? "Read for Free" : "Get This Book"}
                 </button>
               </PopoverTrigger>
               <PopoverContent className="w-72 p-4 bg-surface-elevated border-border/60">

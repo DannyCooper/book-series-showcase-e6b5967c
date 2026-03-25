@@ -9,9 +9,13 @@
     "genre": "Action Comedy",
     "year": "2024",
     "purchase_links": {
+      "bookfunnel": "https://dl.bookfunnel.com/p5etjvrkl2",
+      "apple": "https://books.apple.com/us/book/nun-more-deadly/id6760197526",
+      "curios": "https://www.curios.com/collections/0xf9c84d54e6e7287c71c31f6dafa4442ec39caae1",
+      "Barnes & Noble": "https://www.barnesandnoble.com/w/nun-more-deadly-dominicka-kane/1149639917?ean=2940183412390",
+      "Kobo": "https://www.kobo.com/us/en/ebook/nun-more-deadly",
       "amazon us": "https://www.amazon.com/dp/B0GSBL6MDB",
-      "amazon uk": "https://www.amazon.co.uk/dp/B0GSBL6MDB",
-      "curios": "https://www.curios.com/collections/0xf9c84d54e6e7287c71c31f6dafa4442ec39caae1"
+      "amazon uk": "https://www.amazon.co.uk/dp/B0GSBL6MDB"
     },
     "boxset_links": {
       "amazon": "https://www.amazon.com/gp/product/B0GSCD9RDY",
